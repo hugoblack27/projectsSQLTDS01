@@ -21,6 +21,9 @@ insert into tbFuncionarios(codFunc,nome,email,telefone,cpf,idade,salario) values
 insert into tbFuncionarios(codFunc,nome,email,telefone,cpf,idade,salario) values(3,'Rosimeire Souza Costa','rosimeiresouza@gmail.com','965429854','157.137.514-65',54,500);
 insert into tbFuncionarios(codFunc,nome,email,telefone,cpf,idade,salario) values(4,'Rosana Batista','roBatista@gmail.com','965456464','125.187.714-25',45,1300);
 insert into tbFuncionarios(codFunc,nome,email,telefone,cpf,idade,salario) values(5,'Reinaldo Batista','reinaldoBa@gmail.com','963643154','747.637.544-35',51,3216);
+insert into tbFuncionarios(codFunc,nome,email,telefone,cpf,idade,salario) values(5,'Reinaldo Batista','reinaldoBa@gmail.com','963643154','747.637.544-35',51,3216);
+insert into tbFuncionarios(codFunc,nome,email,telefone,cpf,idade,salario) values(5,'Reinaldo Batista','reinaldoBa@gmail.com','963643154','747.637.544-35',51,3216);
+insert into tbFuncionarios(codFunc,nome,email,telefone,cpf,idade,salario) values(5,'Reinaldo Batista','reinaldoBa@gmail.com','963643154','747.637.544-35',51,3216);
 
 -- visualizando as estruturas das tabelas
 desc tbFuncionarios;
