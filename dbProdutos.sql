@@ -29,3 +29,28 @@ select * from PRODUTOS;
 select * from PRODUTOS where TIPO = 'INFORMATICA';
 
 select NOME from PRODUTOS where TIPO = 'INFORMATICA';
+
+-- aumente em 12% os produtos que começam com F:
+update produtos set valor = valor * 1.12 where nome like 'f%';
+
+select * from PRODUTOS where nome like 'f%';
+
+-- aumentar em 50 unidades os produtos que seja maior que 400 e inferior a 600:
+update produtos set QUANTIDADE = QUANTIDADE + 50 where valor > 400 and valor < 600;
+
+select * from PRODUTOS where valor > 400 and valor < 600;;
+
+-- aplicar desconto de 50% em todos os produtos que esteja com a quantidade maior que 300
+update produtos set valor = valor * 0.50 where QUANTIDADE > 300;
+
+select * from PRODUTOS where QUANTIDADE > 300;
+
+-- exiba o produto do codigo 4
+select * from PRODUTOS where CODIGO = 4;
+
+-- exiba todos os produtos que não tenha Y
+select * from PRODUTOS where nome not like '%y%';
+
+-- exibir todos os produtos que iniciem com o nome MO e tenham letras MA
+select * from PRODUTOS where nome like 'MO%' and tipo like '%MA%';
+
