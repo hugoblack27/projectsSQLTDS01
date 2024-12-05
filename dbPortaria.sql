@@ -135,9 +135,31 @@ where func.codFunc = 2;
 select func.nome as 'nome do Funcionario', usu.nome as 'nome do Usuario' from tbUsuarios as usu
 inner join tbFuncionarios as func
 on usu.codFunc = func.codFunc
-where func.nome like '%j%';
+where func.nome like '%m%';
 
 select func.nome as 'nome do Funcionario', usu.nome as 'nome do Usuario' from tbUsuarios as usu
 inner join tbFuncionarios as func
 on usu.codFunc = func.codFunc
 where func.codFunc = 3;
+
+select func.nome as 'nome do Funcionario',cli.nome as 'nome do cliente',prod.descricao,
+vend.quantidade,vend.valor
+from tbVendas as vend
+inner join
+tbFuncionarios as func on vend.codUsu = func.codfunc
+inner join
+tbClientes as cli on vend.codCli = cli.codCli
+inner join
+tbProdutos as prod on vend.codProd = prod.codProd;
+
+-- Nome do fornecedor, lote do produto , validade do produto, 
+-- email do fornecedor, quantidade de produto, 
+-- cnpj do fornecedor, preço do produto.
+ 
+-- A pergunta é para a tabela produtos.
+
+select forn.nome, prod.lote, prod.validade, forn.email, prod.quantidade, forn.cnpj, prod.preco
+from tbProdutos as prod 
+inner join
+tbFornecedores as forn on prod.codForn = forn.codForn;
+
